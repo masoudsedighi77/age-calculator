@@ -1,0 +1,138 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;1,400;1,800&display=swap");
+
+/* font-family: 'Poppins', sans-serif; */
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  width: 375px;
+  background-color: hsl(0, 0%, 86%);
+}
+
+.container {
+  width: 85%;
+  background-color: #fff;
+  margin: 4rem auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 1.3rem 1.3rem 4.2rem 1.3rem;
+  padding: 2rem 1rem;
+
+  > .birth-row {
+    width: 100%;
+    /* background-color: green; */
+    display: flex;
+    justify-content: space-between;
+    > input {
+      width: 5rem;
+      height: 3rem;
+      border-radius: 7px;
+      border: 1px solid rgba(153, 148, 148, 0.5);
+      font-size: 13px;
+      font-weight: 700;
+      padding: 5px;
+    }
+  }
+
+  > .hr {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    > .logo {
+      /* border: 4px solid hsl(259, 100%, 65%); */
+      background-color: hsl(259, 100%, 65%);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 50%;
+      padding: 2px;
+      width: 50px;
+      height: 50px;
+      margin: -5.3rem;
+      cursor: pointer;
+
+      > svg {
+        width: 56%;
+      }
+    }
+    > .logo:hover {
+      background-color: black;
+    }
+    > .hr-line {
+      width: 100%;
+      border-top: 1px hsl(259, 100%, 65%) solid;
+      height: 60px;
+      margin-top: 3rem;
+    }
+  }
+
+  > .result {
+    display: flex;
+    flex-direction: column;
+    font-size: 36px;
+    font-style: italic;
+    font-weight: 800;
+    margin-top: 6.5rem;
+    > .result-years {
+      display: flex;
+      > .number {
+        color: hsl(259, 100%, 65%);
+      }
+    }
+
+    > .result-months {
+      display: flex;
+      > .number {
+        color: hsl(259, 100%, 65%);
+      }
+    }
+    > .result-days {
+      display: flex;
+      > .number {
+        color: hsl(259, 100%, 65%);
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  body {
+    width: 768px;
+    margin: auto;
+  }
+  .container {
+    width: 80%;
+    padding: 2.5rem 3rem;
+    border-radius: 1rem 1rem 8rem 1.3rem;
+    > .birth-row {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      > input {
+        width: 100px;
+        height: 50px;
+        margin-left: 2rem;
+      }
+    }
+
+    > .hr {
+      > .logo {
+        margin-left: 25rem;
+        width: 70px;
+        height: 70px;
+      }
+      .hr-line {
+        margin-top: rem;
+      }
+    }
+  }
+}
